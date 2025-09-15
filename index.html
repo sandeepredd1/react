@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitShop - Fresh Fruits Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-apple-alt"></i>
+                <span>FruitShop</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#men" class="nav-link">Men's</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#women" class="nav-link">Women's</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cart" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+                <li class="nav-item auth-links">
+                    <a href="#login" class="nav-link login-btn">Login</a>
+                    <a href="#signup" class="nav-link signup-btn">Sign Up</a>
+                    <a href="#" class="nav-link logout-btn" style="display: none;">Logout</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Fresh Fruits Delivered to Your Door</h1>
+                    <p>Premium quality fruits sourced directly from farms</p>
+                    <button class="cta-btn">Shop Now</button>
+                </div>
+            </div>
+            
+            <div class="featured-products">
+                <h2>Featured Fruits</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300&h=300&fit=crop" alt="Apple">
+                        <h3>Fresh Apples</h3>
+                        <p class="price">$3.99/lb</p>
+                        <button class="add-to-cart" data-name="Fresh Apples" data-price="3.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=300&fit=crop" alt="Banana">
+                        <h3>Organic Bananas</h3>
+                        <p class="price">$2.49/lb</p>
+                        <button class="add-to-cart" data-name="Organic Bananas" data-price="2.49">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?w=300&h=300&fit=crop" alt="Orange">
+                        <h3>Sweet Oranges</h3>
+                        <p class="price">$4.99/lb</p>
+                        <button class="add-to-cart" data-name="Sweet Oranges" data-price="4.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About FruitShop</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At FruitShop, we're passionate about delivering the freshest, highest-quality fruits directly to your doorstep. Our commitment to excellence means we work directly with local farms and trusted suppliers to ensure every piece of fruit meets our rigorous standards.</p>
+                        <p>Founded in 2020, we've grown from a small local business to a trusted online fruit retailer, serving thousands of satisfied customers across the region.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <h3>Fresh & Organic</h3>
+                                <p>Sourced directly from certified organic farms</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-truck"></i>
+                                <h3>Fast Delivery</h3>
+                                <p>Same-day delivery available in select areas</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Quality Guarantee</h3>
+                                <p>100% satisfaction guarantee on all products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Men's Section -->
+        <section id="men" class="section">
+            <div class="container">
+                <h2>Men's Favorites</h2>
+                <p class="section-desc">Energizing fruits perfect for an active lifestyle</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=300&fit=crop" alt="Banana">
+                        <h3>Power Bananas</h3>
+                        <p class="description">High in potassium, perfect for workouts</p>
+                        <p class="price">$2.99/lb</p>
+                        <button class="add-to-cart" data-name="Power Bananas" data-price="2.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300&h=300&fit=crop" alt="Apple">
+                        <h3>Crisp Apples</h3>
+                        <p class="description">Crunchy and refreshing</p>
+                        <p class="price">$4.49/lb</p>
+                        <button class="add-to-cart" data-name="Crisp Apples" data-price="4.49">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?w=300&h=300&fit=crop" alt="Orange">
+                        <h3>Vitamin C Oranges</h3>
+                        <p class="description">Boost your immune system</p>
+                        <p class="price">$5.49/lb</p>
+                        <button class="add-to-cart" data-name="Vitamin C Oranges" data-price="5.49">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=300&h=300&fit=crop" alt="Mango">
+                        <h3>Tropical Mangoes</h3>
+                        <p class="description">Sweet and exotic flavor</p>
+                        <p class="price">$6.99/lb</p>
+                        <button class="add-to-cart" data-name="Tropical Mangoes" data-price="6.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" alt="Grapes">
+                        <h3>Energy Grapes</h3>
+                        <p class="description">Natural energy boost</p>
+                        <p class="price">$7.99/lb</p>
+                        <button class="add-to-cart" data-name="Energy Grapes" data-price="7.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=300&h=300&fit=crop" alt="Pineapple">
+                        <h3>Fresh Pineapple</h3>
+                        <p class="description">Rich in enzymes and vitamins</p>
+                        <p class="price">$8.99/each</p>
+                        <button class="add-to-cart" data-name="Fresh Pineapple" data-price="8.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Women's Section -->
+        <section id="women" class="section">
+            <div class="container">
+                <h2>Women's Favorites</h2>
+                <p class="section-desc">Beauty and wellness fruits for a healthy glow</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=300&h=300&fit=crop" alt="Strawberry">
+                        <h3>Beauty Strawberries</h3>
+                        <p class="description">Rich in antioxidants and vitamin C</p>
+                        <p class="price">$5.99/lb</p>
+                        <button class="add-to-cart" data-name="Beauty Strawberries" data-price="5.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=300&h=300&fit=crop" alt="Blueberry">
+                        <h3>Antioxidant Blueberries</h3>
+                        <p class="description">Superfood for skin health</p>
+                        <p class="price">$8.99/lb</p>
+                        <button class="add-to-cart" data-name="Antioxidant Blueberries" data-price="8.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=300&fit=crop" alt="Avocado">
+                        <h3>Glow Avocados</h3>
+                        <p class="description">Healthy fats for radiant skin</p>
+                        <p class="price">$3.99/each</p>
+                        <button class="add-to-cart" data-name="Glow Avocados" data-price="3.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=300&h=300&fit=crop" alt="Kiwi">
+                        <h3>Vitamin Kiwis</h3>
+                        <p class="description">Boost collagen production</p>
+                        <p class="price">$4.99/lb</p>
+                        <button class="add-to-cart" data-name="Vitamin Kiwis" data-price="4.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=300&h=300&fit=crop" alt="Papaya">
+                        <h3>Enzyme Papaya</h3>
+                        <p class="description">Natural digestive aid</p>
+                        <p class="price">$6.49/lb</p>
+                        <button class="add-to-cart" data-name="Enzyme Papaya" data-price="6.49">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" alt="Pomegranate">
+                        <h3>Youth Pomegranate</h3>
+                        <p class="description">Anti-aging superfruit</p>
+                        <p class="price">$9.99/each</p>
+                        <button class="add-to-cart" data-name="Youth Pomegranate" data-price="9.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="section">
+            <div class="container">
+                <h2>Shopping Cart</h2>
+                <div class="cart-content">
+                    <div id="cart-items" class="cart-items">
+                        <p class="empty-cart">Your cart is empty</p>
+                    </div>
+                    <div class="cart-summary">
+                        <div class="cart-total">
+                            <h3>Total: $<span id="cart-total">0.00</span></h3>
+                        </div>
+                        <button class="checkout-btn" id="checkout-btn" disabled>Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Fruit Street<br>Fresh City, FC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@fruitshop.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login" class="section auth-section">
+            <div class="container">
+                <div class="auth-form">
+                    <h2>Login</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <input type="email" id="login-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit">Login</button>
+                        <p>Don't have an account? <a href="#signup" class="switch-auth">Sign up</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign Up Section -->
+        <section id="signup" class="section auth-section">
+            <div class="container">
+                <div class="auth-form">
+                    <h2>Sign Up</h2>
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <input type="text" id="signup-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="signup-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="signup-password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="signup-confirm" placeholder="Confirm Password" required>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                        <p>Already have an account? <a href="#login" class="switch-auth">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-apple-alt"></i> FruitShop</h3>
+                    <p>Your trusted source for fresh, quality fruits delivered right to your door.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#men">Men's</a></li>
+                        <li><a href="#women">Women's</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for fresh deals and updates</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FruitShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
